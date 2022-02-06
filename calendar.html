@@ -10,7 +10,6 @@
            var start_date = document.getElementById("start_date")
            var end_date = document.getElementById("end_date")
            var result_value = document.getElementById("result")
-           //由於瀏覽器之間的不同與差異，強烈不建議使用 Date.parse(要再修改)
            start_date_value = Date.parse(start_date.value)//解析字串所表示的時間，回傳由 1970/01/01 00:00:00 (UTC) 到該時間的毫秒數值。
            end_date_value = Date.parse(end_date.value)
            diff_day =Math.abs(start_date_value - end_date_value)
